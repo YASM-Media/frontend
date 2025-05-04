@@ -1,6 +1,8 @@
 {
   "version": "4",
   "specifiers": {
+    "npm:@solidjs/router@~0.15.3": "0.15.3_solid-js@1.9.6__seroval@1.2.1",
+    "npm:oidc-client-ts@^3.2.0": "3.2.0",
     "npm:solid-js@^1.9.5": "1.9.6_seroval@1.2.1",
     "npm:typescript@~5.7.2": "5.7.3",
     "npm:vite-plugin-solid@^2.11.6": "2.11.6_solid-js@1.9.6__seroval@1.2.1_vite@6.3.4__picomatch@4.0.2_@babel+core@7.27.1",
@@ -305,6 +307,12 @@
     "@rollup/rollup-win32-x64-msvc@4.40.1": {
       "integrity": "sha512-ECyOuDeH3C1I8jH2MK1RtBJW+YPMvSfT0a5NN0nHfQYnDSJ6tUiZH3gzwVP5/Kfh/+Tt7tpWVF9LXNTnhTJ3kA=="
     },
+    "@solidjs/router@0.15.3_solid-js@1.9.6__seroval@1.2.1": {
+      "integrity": "sha512-iEbW8UKok2Oio7o6Y4VTzLj+KFCmQPGEpm1fS3xixwFBdclFVBvaQVeibl1jys4cujfAK5Kn6+uG2uBm3lxOMw==",
+      "dependencies": [
+        "solid-js"
+      ]
+    },
     "@types/babel__core@7.20.5": {
       "integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
       "dependencies": [
@@ -449,6 +457,9 @@
     "json5@2.2.3": {
       "integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg=="
     },
+    "jwt-decode@4.0.0": {
+      "integrity": "sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA=="
+    },
     "lru-cache@5.1.1": {
       "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
       "dependencies": [
@@ -469,6 +480,12 @@
     },
     "node-releases@2.0.19": {
       "integrity": "sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw=="
+    },
+    "oidc-client-ts@3.2.0": {
+      "integrity": "sha512-wUvVcG3SXzZDKHxi/VGQGaTUk9qguMKfYh26Y1zOVrQsu1zp85JWx/SjZzKSXK5j3NA1RcasgMoaHe6gt1WNtw==",
+      "dependencies": [
+        "jwt-decode"
+      ]
     },
     "parse5@7.3.0": {
       "integrity": "sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw==",
@@ -607,10 +624,14 @@
   },
   "workspace": {
     "dependencies": [
+      "npm:@solidjs/router@~0.15.3",
+      "npm:oidc-client-ts@^3.2.0",
       "npm:solid-js@^1.9.5"
     ],
     "packageJson": {
       "dependencies": [
+        "npm:@solidjs/router@~0.15.3",
+        "npm:oidc-client-ts@^3.2.0",
         "npm:solid-js@^1.9.5",
         "npm:typescript@~5.7.2",
         "npm:vite-plugin-solid@^2.11.6",
