@@ -11,7 +11,7 @@ The following are required to start using the repository:
 deno install
 ```
 
-**Step 2:** Run the API using the following command:
+**Step 2:** Run the frontend using the following command:
 ```
 deno task dev
 ```
