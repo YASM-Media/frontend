@@ -1,5 +1,6 @@
 import { onMount } from "solid-js";
 import { useNavigate } from "@solidjs/router";
+import { createAuthenticationInfo } from "./../../services/auth.ts";
 import authenticationManager from "../../utils/auth_manager.ts";
 
 function SignInCallback() {
@@ -7,6 +8,7 @@ function SignInCallback() {
 
   onMount(async () => {
     await authenticationManager.signinCallback();
+    await createAuthenticationInfo();
     navigate("/");
   });
 
